@@ -1,0 +1,22 @@
+:root {
+  --clr-accent-light: #4a90e2;
+  --clr-accent-dark: #2a6fc3;
+
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-light-black: #555;
+
+  --padding-small: 24px;
+  --padding-big: 24px 40px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
