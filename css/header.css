@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header input {
+  border: 1px solid var(--clr-lightgrey);
+  outline: none;
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--padding-big);
+}
+
+header .clg-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+header .clg-title img {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+}
+
+header .clg-name {
+  text-transform: uppercase;
+  font-size: 24px;
+
+  color: var(--clr-white);
+  font-family: "Kaisei Tokumin", serif;
+}
+
+header .search-box {
+  display: flex;
+  gap: 0;
+}
+
+header .search-bar,
+header .search-icon {
+  padding: 8px 12px;
+}
+
+header .search-bar {
+  border-radius: 4px 0 0 4px;
+}
+
+header .search-icon {
+  background: var(--clr-lightgrey);
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
