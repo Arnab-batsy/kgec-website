@@ -1,6 +1,6 @@
-*,
-*::before,
-*::after {
+.highlight-section *,
+.highlight-section *::before,
+.highlight-section *::after {
   box-sizing: content-box;
 }
 .high {

@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,6 +24,10 @@ header .header-container {
   justify-content: space-between;
 
   padding: var(--padding-big);
+}
+
+header .header-container.active {
+  background: rgba(0, 0, 0, 0.75);
 }
 
 header .clg-title {

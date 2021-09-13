@@ -2,79 +2,73 @@
 *::before,
 *::after {
   box-sizing: content-box;
-} 
-.courses-section{
-    margin:40px;
-    margin-top: 0px;
-    padding: 40px;
-    display: grid;
-    grid-template-rows: auto;
-    position: relative;
-  
-  }
-  .courses-section::after, .courses-section::before{
-    content: '';
-    position: fixed;
-    width: 2px;
-    height: 25%;
-  
-  }
-  .courses-section::before{
-    top: 0;
-    left: 50%;
+}
+.courses-section {
+  margin: 40px;
+  margin-top: 0px;
+  padding: 40px;
+  display: grid;
+  grid-template-rows: auto;
+  position: relative !important;
+}
+.line {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 25%;
+}
+.top-line {
+  top: 0;
+  left: 50%;
   background: linear-gradient(to top, #d3d3d3, #4a90e2);
-  }
-  .courses-section::after{
-    bottom: 0;
-    left: 50%;
-    background: linear-gradient(to bottom, #d3d3d3, #4a90e2);
-  }
-  .courses-section p{
-    line-height: 1.5;
-  }
-  .courses-section img{
-    height: 90%;
-    width:90%;
-    border-radius: 12px;
-  }
-  .left{
+}
+.bottom-line {
+  bottom: 0;
+  left: 50%;
+  background: linear-gradient(to bottom, #d3d3d3, #4a90e2);
+}
+.courses-section p {
+  line-height: 1.5;
+}
+.courses-section img {
+  height: 90%;
+  width: 90%;
+  border-radius: 12px;
+}
+.left {
   margin-right: auto;
-  
-  }
-  .right{
-    margin-left: auto;
-  
-  }
-  .dept{
-    width: 100%;
-    padding: 20px;
-    padding-top: 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
-  .content-right{
-    margin: 40px;
-    padding: 20px;
-    margin-left: 0px;
-    padding-left: 0;
-    margin-top: 0;
-    padding-top: 0;
-  
-  }
-  .content-left{
-    margin: 40px;
-    padding: 20px;
-    margin-top: 0;
-    padding-top: 0;
-  }
-  .courses-section h1{
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-  .courses-section p{
-    color: #555;
-  }
-  
+}
+.right {
+  margin-left: auto;
+}
+.dept {
+  width: 100%;
+  padding: 20px;
+  padding-top: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.content-right {
+  margin: 40px;
+  padding: 20px;
+  margin-left: 0px;
+  padding-left: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+.content-left {
+  margin: 40px;
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.courses-section h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.courses-section p {
+  color: #555;
+}
