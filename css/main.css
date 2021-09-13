@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+section {
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.landing-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  background: url(../assets/images/group.jpeg), rgba(0, 0, 0, 0.65);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  position: relative;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+
+  margin-top: 200px;
+
+  width: max-content;
+
+  text-align: center;
+  font-size: 4rem;
+  color: var(--clr-white);
+  font-family: "DM Serif Display", serif;
+  text-shadow: 2px 2px 3px #000;
+
+  position: relative;
+}
+
+.title span {
+  font-size: 80px;
+  letter-spacing: 12px;
+
+  text-shadow: 2px 2px 3px #000;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 50%;
+
+  background: var(--clr-lightgrey);
+}
+
+.title::before {
+  top: 0;
+  right: 0;
+}
+
+.title::after {
+  top: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.cards-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* gap: 16px; */
+}
+
+.card {
+  padding: var(--padding-big);
+  color: var(--clr-white);
+
+  background: rgba(0, 0, 0, 0.75);
+
+  transition: background 0.2s ease-in-out;
+}
+
+.card:nth-child(2),
+.card:nth-child(4) {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.card p {
+  margin: 8px 0 16px;
+
+  color: var(--clr-lightgrey);
+  opacity: 0.8;
+}
+
+/* .btn-arrow {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--clr-lightgrey);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--clr-lightgrey);
+
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    background 0.2s ease-in-out;
+} */
+
+.btn-arrow {
+  background: transparent;
+}
+
+.btn-arrow i {
+  font-size: 20px;
+  color: grey;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.btn-arrow i:hover {
+  color: var(--clr-white);
+}
+
+/* .btn-arrow:hover {
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+
+  background: rgba(0, 0, 0, 0.45);
+} */
