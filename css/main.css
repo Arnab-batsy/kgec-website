@@ -16,7 +16,7 @@ button {
   align-items: flex-start;
   justify-content: center;
 
-  background: url(../assets/images/group.jpeg), rgba(0, 0, 0, 0.65);
+  background: url(../assets/Images/group.jpeg), rgba(0, 0, 0, 0.65);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: center center;
